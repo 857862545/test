@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+          <div id="app">{{message}}
+                  <ul>
+                          <li v-for="(m,index) in movies" ">{{index}}{{m}}</li>
+                  </ul>
+                  
+          </div>
+
+          <script src="../vue.js"></script>
+          <script>
+
+          let app=new Vue({
+          el:'#app', 
+          data : {
+          message:'你好啊 吴彦祖！' ,
+          movies:["海王","四月是你的谎言","东京喰种","进击的巨人"]
+        },
+         methods: {
+                 getClick(){
+                          return true;
+                 }
+         },
+        })
+
+          </script>
+</body>
+</html>

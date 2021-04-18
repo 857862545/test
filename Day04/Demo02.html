@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>计算机属性</title>
+</head>
+<body>
+        <div id="app">{{message}}
+                
+        </div>
+
+
+        <script src="../vue.js"></script>
+        <script>
+
+        let app=new Vue({
+        el:'#app', 
+        data : {
+        books:[
+                {id:100,name:'CSS解密1',price:200},
+                {id:101,name:'CSS解密2',price:200},
+                {id:102,name:'CSS解密3',price:200},
+                {id:103,name:'CSS解密4',price:200},
+]
+      },
+      computed:{
+              sum:function(){
+                      let result=0
+                      for(let i=0;i<this.books.length;i++){
+                              result+=this.books[i].price
+                      }
+                      return  result
+
+                      for(let i in this.books){
+                              this.books[i]
+                      }
+
+                      for(let book of this.books){
+                              
+                      }
+              }
+      }
+      })
+        </script>  
+</body>
+</html>

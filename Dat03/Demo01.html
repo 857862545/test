@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>动态绑定使用</title>
+</head>
+<body>
+          <div id="app">{{message}}
+
+                <img v-bind:src="imgUrl" alt="">
+                
+          </div>
+
+         
+
+
+          <script src="../vue.js"></script>
+
+          <script>
+          let app=new Vue({
+
+          el:'#app', 
+          data : {
+          message:'你好啊 吴彦祖！' ,
+          imgUrl:'https://i0.hdslb.com/bfs/feed-admin/f9c3232a3e198846fa0502708cd15e99a1687030.jpg@336w_190h.webp'
+        }
+
+        })
+          </script>
+</body>
+</html>
